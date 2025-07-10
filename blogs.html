@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+        <a href="index.html"><img src="images/logo.png" alt="TripKot Logo" id="navbar__logo"></a>
+        <div class="navbar__toggle"></div>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <ul class="navbar__menu">
+        <li class="navbar__item">
+            <a href="index.html" class="navbar__links">Home</a>
+        </li>
+        <li class="navbar__item">
+            <a href="blogs.html" class="navbar__links">Blogs</a>
+        </li>
+        <li class="navbar__item">
+            <a href="gallery.html" class="navbar__links">Gallery</a>
+        </li>
+        <li class="navbar__btn">
+            <a href="contact.html" class="button">Contact</a>
+        </li>
+    </ul>
+</nav>
+
+      <div class="main">
+        <div class="main_container">
+            <div class="main_content">
+                <h1>WELCOME TO THE BLOG</h1>
+                <p>Discover the beauty of the world through my journeys.</p>
+                <button class="main_btn"><a href="#destinations">Find Out</a></button>
+            </div>
+            </div>
+            <div class="main_img_container">
+                <img id="main_img" src="images/undraw_aircraft_re_m05i.svg" alt="Travel Image"/>
+            </div>
+        </div>
+    </div>
+    <section id="about" class="about">
+      <div class="about_container">
+          <h2>About Me</h2>
+          <p>Hi, I'm Danyse, an avid traveler and photographer. Join me as I explore new destinations and share my experiences through this portfolio.</p>
+          <audio controls loop>
+            <source src="audio/Lofi_Hip_Hop_Chill_Lofi_-_PeryCreep.mp3" type="audio/mpeg">
+          </audio>
+      </div>
+    </section>
+
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Supporter</h2>
+            <button id="check-supporter-btn">Check if I'm a supporter</button>
+          </div>
+          <div class="footer__link--items">
+            <h2>Contact Us</h2>
+            <p>@email.gmail.com</p>
+            <p>+65 89234876</p>
+            <p>Name: Danyse</p>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.youtube.com/">Youtube</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Select the anchor element inside the element with class main_btn
+      const mainBtnLink = document.querySelector('.main_btn a');
+      
+      // Add an event listener to the anchor element
+      mainBtnLink.addEventListener('click', function(event) {
+        // Prevent the default link behavior
+        event.preventDefault();
+      
+        // Select the element with id about
+        const aboutSection = document.querySelector('#about');
+      
+        // Smoothly scroll to the about section
+        aboutSection.scrollIntoView({ behavior: 'smooth' });
+      });
+      </script>
+  <script src="script.js"></script>
+    
+  
+  </body>
+</html>

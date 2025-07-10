@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+        <img src="images/logo.png" alt="TripKot Logo" id="navbar__logo">
+        <div class="navbar__toggle"></div>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <ul class="navbar__menu">
+        <li class="navbar__item">
+            <a href="index.html" class="navbar__links">Home</a>
+        </li>
+        <li class="navbar__item">
+            <a href="blogs.html" class="navbar__links">Blogs</a>
+        </li>
+        <li class="navbar__item">
+            <a href="gallery.html" class="navbar__links">Gallery</a>
+        </li>
+        <li class="navbar__btn">
+            <a href="contact.html" class="button">Contact</a>
+        </li>
+    </ul>
+  </nav>
+
+  <h2>Digicam <br> by danyse</h2>
+<div id="gmyBtnContainer">
+    <button class="gbtn active" data-filter="all">Show all</button>
+    <button class="gbtn" data-filter="scenery">Scenery</button>
+    <button class="gbtn" data-filter="animal">Animals</button>
+    <button class="gbtn" data-filter="people">People</button>
+</div>
+
+<!--Gallery Grid -->
+<div class="grow">
+  <div class="gcol scenery">
+    <div class="gcontent">
+      <img src="gallery/1.JPG" alt="Scenery" style="width:100%">
+      <h4>Scenery</h4>
+      <p>Streets in japan</p>
+    </div>
+  </div>
+    <div class="gcol scenery">
+      <div class="gcontent">
+            <img src="gallery/7.JPG" alt="Scenery" style="width:100%">
+            <h4>Scenery</h4>
+            <p>Sky Picture</p>
+      </div>
+    </div>
+    <div class="gcol scenery">
+        <div class="gcontent">
+            <img src="gallery/8.JPG" alt="Scenery" style="width:100%">
+            <h4>Temple</h4>
+            <p>in Japan</p>
+        </div>
+    </div>
+
+    <div class="gcol scenery">
+        <div class="gcontent">
+            <img src="gallery/9.JPG" alt="Scenery" style="width:100%">
+            <h4>Singapore</h4>
+            <p>..</p>
+        </div>
+    </div>
+
+    <div class="gcol scenery">
+        <div class="gcontent">
+            <img src="gallery/11.JPG" alt="Scenery" style="width:100%">
+            <h4>Singapore Sky</h4>
+            <p>Cool</p>
+        </div>
+    </div>
+
+  <div class="gcol scenery">
+    <div class="gcontent">
+      <img src="gallery/2.jpg" alt="Scenery" style="width:100%">
+      <h4>Streets</h4>
+      <p>Coool</p>
+    </div>
+  </div>
+  <div class="gcol scenery">
+    <div class="gcontent">
+      <img src="gallery/3.jpg" alt="Scenery" style="width:100%">
+      <h4>Bridge</h4>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="gcol people">
+    <div class="gcontent">
+      <img src="gallery/4.JPG" alt="People" style="width:100%">
+      <h4>Retro Cam</h4>
+      <p>me im so cool</p>
+    </div>
+  </div>
+  <div class="gcol animal">
+    <div class="gcontent">
+      <img src="gallery/6.JPG" alt="Animal" style="width:100%">
+      <h4>Sassy Deer</h4>
+      <p>bahhhhhh...</p>
+    </div>
+  </div>
+
+  <div class="gcol people">
+    <div class="gcontent">
+      <img src="gallery/4.jpg" alt="People" style="width:100%">
+      <h4>Extra pic of me</h4>
+      <p>meow</p>
+    </div>
+  </div>
+  <div class="gcol people">
+    <div class="gcontent">
+      <img src="gallery/5.JPG" alt="People" style="width:100%">
+      <h4>Father and daughter</h4>
+      <p>cool sia</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer__container">
+  <div class="footer__links">
+    <div class="footer__link--wrapper">
+      <div class="footer__link--items">
+        <h2>Supporter</h2>
+        <button id="check-supporter-btn">Check if I'm a supporter</button>
+      </div>
+      <div class="footer__link--items">
+        <h2>Contact Us</h2>
+        <p>@email.gmail.com</p>
+        <p>+65 89234876</p>
+        <p>Name: Danyse</p>
+      </div>
+    </div>
+    <div class="footer__link--wrapper">
+      <div class="footer__link--items">
+        <h2>Social Media</h2>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.youtube.com/">Youtube</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="gallery.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

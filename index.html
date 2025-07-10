@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html"><img src="images/logo.png" alt="TripKot Logo" id="navbar__logo"></a>
+            <div class="navbar__toggle"></div>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="index.html" class="navbar__links">Home</a>
+            </li>
+            <li class="navbar__item">
+                <a href="blogs.html" class="navbar__links">Blogs</a>
+            </li>
+            <li class="navbar__item">
+                <a href="gallery.html" class="navbar__links">Gallery</a>
+            </li>
+            <li class="navbar__btn">
+                <a href="contact.html" class="button">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <div class="main_container">
+            <div class="main_content">
+                <h1>Welcome to</h1>
+                <h2>TripKot</h2>
+                <p>A Travel Website</p>
+                <button class="main_btn"><a href="/">Get Started</a></button>
+            </div>
+            <div class="main_img_container">
+                <img src="images/undraw_best_place_re_lne9.svg" alt="/" id="img">
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-container">
+      <div class="slider">
+          <div class="slider-wrapper">
+              <div class="slider-list">
+                  <div class="slider-item">
+                      <img src="images/pexels-symeon-ekizoglou-1107605-3948080.jpg" alt="1" class="slide">
+                  </div>
+                  <div class="slider-item">
+                      <img src="images/pexels-imagevain-2467670.jpg" alt="2" class="slide">
+                  </div>
+                  <div class="slider-item">
+                      <img src="images/pexels-markus-winkler-1430818-4847619.jpg" alt="3" class="slide">
+                  </div>
+                  <div class="slider-item">
+                      <img src="images/pexels-evgeny-tchebotarev-1058775-2187308.jpg" alt="4" class="slide">
+                  </div>
+              </div>
+          </div>
+          <button id="prevButton" class="nav-button prev-button">&#10094;</button>
+          <button id="nextButton" class="nav-button next-button">&#10095;</button>
+          <div class="nav-dots">
+              <span class="nav-dot" data-index="0"></span>
+              <span class="nav-dot" data-index="1"></span>
+              <span class="nav-dot" data-index="2"></span>
+              <span class="nav-dot" data-index="3"></span>
+          </div>
+      </div>
+  </div>
+  <section id="about" class="about">
+    <div class="about_container">
+        <h2>About the website</h2>
+        <p>As a travel enthusiast and Student, I've been fortunate enough to explore various destinations around the world. This section showcases some of my favorite travel experiences, highlighting the places I've been, the cultures I've encountered, and the lessons I've learned along the way<br>
+        The section below shows links to the best information and tips I could find so that I can share it to you.</p>
+    </div>
+  </section>
+
+
+
+    <div class="destinations">
+        <img src="images/Destinations-removebg-preview.png"  alt="destinations" id="deslogo">
+        <div class="d_container">
+          <div class="country">
+            <h2>Philippines</h2>
+            <button><a href="https://www.stokedtotravel.com/philippines-travel-tips/">See More</a></button>
+          </div>
+          <div class="country">
+            <h2>Korea</h2>
+            <button><a href="https://www.klook.com/en-SG/blog/best-korea-travel-hacks/">See More</a></button>
+          </div>
+          <div class="country">
+            <h2>Japan</h2>
+            <button><a href="https://boutiquejapan.com/japan-travel-tips/" >See More</a></button>
+          </div>          
+          <div class="country">
+            <h2>Singapore</h2>
+            <button><a href="https://www.thrillophilia.com/places-to-visit-in-singapore">See More</a></button>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Supporter</h2>
+            <button id="check-supporter-btn">Check if I'm a supporter</button>
+          </div>
+          <div class="footer__link--items">
+            <h2>Contact Us</h2>
+            <p>@email.gmail.com</p>
+            <p>+65 89234876</p>
+            <p>Name: Danyse</p>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.youtube.com/">Youtube</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<script>
+// select the anchor element inside the element with class main_btn
+const mainBtnLink = document.querySelector('.main_btn a');
+
+// add an event listener to the anchor element
+mainBtnLink.addEventListener('click', function(event) {
+  // prevent the default link behavior
+  event.preventDefault();
+
+  // select the element with id about
+  const aboutSection = document.querySelector('#about');
+
+  aboutSection.scrollIntoView({ behavior: 'smooth' });
+});
+</script>
+      <script src="script.js"></script>
+      <script src="test.js"></script>
+</body>
+</html>
